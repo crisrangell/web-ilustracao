@@ -10,11 +10,13 @@
 
 :root{
     --cor0:#689581;
-    --cor1:#c97062;
+    --cor1:#20543d;
     --fonte1:"Roboto", sans-serif;
 }
 
 body{
+    height: 100vh;
+    width: 100vw;
     background-color: var(--cor0);
 
 }
@@ -24,6 +26,7 @@ header{
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;  
+    background-color:var(--cor1)
 }
 header img{
     width: 200px;
@@ -52,7 +55,8 @@ header nav a{
 }
 
 main picture img{
-    width: 400px;
+    width: 375px;
+    margin: auto;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
 }
 
@@ -69,6 +73,15 @@ main section img{
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
 }
 footer{
-    background-color: #c97062;
+    background-color:var(--cor1);
+    margin-top: 10px;
+
     
+    
+}
+footer p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px;
 }

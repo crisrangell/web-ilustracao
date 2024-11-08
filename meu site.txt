@@ -1,0 +1,80 @@
+body{
+    height: 100vh;
+    width: 98vw;
+    background-color:var(--cor0);
+    background-image: url(../imagens/Foto\ principal.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;  
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 200px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+header nav a:hover{
+    background-color: var(--cor0);
+    border-radius: 20px;
+    color: #193b2c;
+    transition: .5s;
+}
+
+
+#fotos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+.icon{
+    height: 185px;
+    margin-top: 400px;
+}
+
+#quemsou{
+    position: relative;
+}
+
+.perfil{
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px;
+
+    position: absolute;
+    top:50%;
+    left: 50%;
+    
+
+   
+}
+
+section p{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: justify;
+    margin: auto;
+
+}
+
+
+
+
+

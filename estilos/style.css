@@ -2,8 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Concert+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -20,116 +18,60 @@
 body{
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
     background-color: var(--cor0);
+    background-image: url(../imagens/Foto\ principal.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 header{
-    background-image: url(../imagens/Foto\ principal.jpg);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80%;
+    background-color: #20543d;
+    height: 50px;
 
+}
+
+#hambuguinho{
+    display: none;
+}
+
+#itens{
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav{
+    color: white;
+    text-decoration: none;
+    font-family: var(--fonte2);
     
 
-}header span{
-    color: white;
-    padding:30px;
 }
 
-header span:hover{
-    color: #193b2c;
-    transition: .5s;
-    cursor:pointer;
+.nav img{
+    width: 150px;
 }
 
-header nav{
-    display:none
+main{
+    background-color: rgba(255, 255, 255, 0);
+    width:400px;
+    height: 85vh;
 }
-
-header nav a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding:5px;
-}
-
-header #nav{
-    display:flex;
-    justify-content: flex-start;
-}
-
-header .titulo{
-
-    padding-top:20px;
-    padding-left:20px;
-    font-family:var(--fonte2);
-    color:white;
-}
-
-header .titulo1{
-    padding-top:20px;
-    padding-left: 5px;
-    font-family:var(--fonte2);
-    color:white;
-}
-
-
-header span{
-    color: white;
-    padding:20px;
-}
-
-header span:hover{
-    border-radius: 20px;
-    color: #193b2c;
-    transition: .5s;
-    cursor:pointer;
-}
-
-header nav{
-    display:none
-}
-
-header nav a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-}
-
-main picture img{
-    width: 380px;
-    margin: auto;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
-}
-
-main section {
-    display:flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    padding-top: 10px;
-}
-
-main section img{
-    width: 120px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.26);
-}
+    
 
 footer{
-    background-color:var(--cor1);
-    margin-top: 10px;
-
-    
-    
-}
-footer p {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    background-color: var(--cor1);
+    font-family: var(--fonte2);
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: flex-end;
     padding: 5px;
+}
+p{
+    color: white;
 }
